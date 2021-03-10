@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>  Inicío </title>
+</head>
+<body>
+     
+    <nav >
+        <div class="nav-wrapper green darken-1">
+            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">Teste</a></li>
+              <li><a href="#">Teste</a></li>
+              <li><a href="#">Teste</a></li>
+            </ul>
+          </div>
+        <nav class="nav-extended green darken-2 ">
+            <div class="nav-content"> 
+                <ul class="tabs tabs-transparent">
+                    
+                    <li class="tab"><a href="#"> Adicionar Paciente</a></li>
+                    <li class="tab"><a href="#">Teste</a></li>
+                    <li class="tab"><a href="#">Teste</a></li>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+<div class="regpac">
+  
+    <div class="row">
+        <form action="http://localhost:8080/paciente/cadastrar" method="POST" class="col s12">
+          <div class="row">
+            <div class="input-field col s8">
+              <i class="material-icons prefix">perm_identity</i>
+              <input name="nome" id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Nome Completo</label>
+            </div>
+            <div class="input-field col s5">
+              <i class="material-icons prefix">phone</i>
+              <input name="telefone" id="icon_telephone" type="tel" class="validate">
+              <label for="icon_telephone">Telefone</label>
+            </div>
+
+            <div class="input-field col s4">
+                <i class="material-icons prefix">assignment_ind
+                </i>
+                <input name="cpf" id="icon_cpf" type="text" class="validate">
+                <label for="icon_cpf">CPF</label>
+              </div>
+
+              <div class="input-field col s5">
+                <i class="material-icons prefix">fingerprint
+                </i>
+                <input name="rg" id="icon_rg" type="text" class="validate">
+                <label for="icon_rg">RG</label>
+              </div>      
+              
+              <div class="input-field col s5">
+                <i class="material-icons prefix">date_range
+                </i>
+                <input name="datanasc" type="text" class="datepicker">
+                <label for="icon_dtn">Data de Nascimento</label>
+              </div> 
+          </div>
+            
+          
+            <label>
+              <input value="MASC" name="sexo" name="group1" class="with-gap" type="radio"  />
+              <span>Masculino</span>
+            </label>
+          
+            <label>
+              <input value="FEM" name="sexo" name="group1" type="radio" class="with-gap" />
+              <span>Feminino</span>
+            </label>
+            <div class="input-field col s5">
+            <select>
+              
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+            
+          
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+              Adicionar
+              <i class="material-icons right">person_add</i>
+            </button> 
+            
+        </form>
+      </div>
+      
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>      
+<script src="./javascript/script.js"></script> 
+</body>
+</html>

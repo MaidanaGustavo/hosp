@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> Inicio </title>
+</head>
+<body>
+    <h1>Seja Bem-Vindo!</h1>
+    <h4>Selecione o seu perfil abaixo</h4>
+ <div class="container">
+    <div class="admin">
+        <img src="./assets/businessman.svg" width="150px"  alt="admin">
+        <span>Administrador</span>
+        <button onclick="redirecionar(1)">Entrar</button>
+    </div>
+
+    <div class="user">
+        <img src="./assets/user.svg" width="150px"  alt="user">
+        <span>Paciente</span>
+        <button onclick="redirecionar(2)">Entrar</button>
+    </div>
+
+    <div class="doctor">
+        <img src="./assets/doctor.svg" width="150px"  alt="doctor">
+        <span>Médico</span>
+        <button onclick="redirecionar(3)">Entrar</button>
+    </div>
+</div>
+<footer> Todos os direitos reservados © Gustavo Maidana 2021</footer>
+<script src="./javascript/script.js"></script>
+</body>
+</html>
