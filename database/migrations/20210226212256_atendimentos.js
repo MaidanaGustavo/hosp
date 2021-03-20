@@ -1,5 +1,5 @@
 
-exports.up = function(knex) {
+exports.up = async function(knex,Promise) {
     return knex.schema.createTable('atendimentos',function(table){
         table.increments('id_atendimento').notNullable();
         table.integer('cd_medico').notNullable()
@@ -10,6 +10,6 @@ exports.up = function(knex) {
     })
 };
 
-exports.down = function(knex) {
+exports.down = async function(knex) {
     return knex.schema.dropTable('atendimentos')
 };

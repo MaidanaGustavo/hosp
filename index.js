@@ -2,6 +2,10 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const cors = require('cors')
+app.use(cors())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
+
 const atendimentosRotas = require('./routes/atendimentos')
 const pacientesRotas = require('./routes/pacientes')
 const medicosRotas = require('./routes/medicos')
@@ -12,8 +16,6 @@ app.use(pacientesRotas);
 app.use(medicosRotas);
 app.use(usrmedicos);
 app.use(usrpacientes)
-app.use(cors())
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended:true}))
+
 
 app.listen(8080)
