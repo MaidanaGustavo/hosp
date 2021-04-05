@@ -7,15 +7,14 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
 const atendimentosRotas = require('./routes/atendimentos')
-const pacientesRotas = require('./routes/pacientes')
+const pacientesRotas = require('./routes/paciente')
 const medicosRotas = require('./routes/medicos')
-const usrmedicos = require('./routes/usuario_medico')
-const usrpacientes = require('./routes/usuario_paciente')
+const usrmedicos = require('./routes/usuarios_medicos')
 app.use(atendimentosRotas);
 app.use(pacientesRotas);
 app.use(medicosRotas);
 app.use(usrmedicos);
-app.use(usrpacientes)
 
 
-app.listen(8080)
+
+app.listen(3030)

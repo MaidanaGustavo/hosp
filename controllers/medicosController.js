@@ -65,13 +65,6 @@ module.exports = {
                telefone
            }).then()
         }
-        if(endereco){
-            knex('medicos')
-            .where({id_medico:req.params.id})
-            .update({
-                endereco
-            }).then()
-        }
         if(cpf){
             knex('medicos')
             .where({id_medico:req.params.id})
@@ -93,7 +86,7 @@ module.exports = {
     },
 
     deletarMedico: (req,res) =>{
-        knex('medicos').where({id_atendimento:req.params.id}).del()
-        .then(resultado=>res.status(200).json({msg:`Atendimento de id : ${req.params.id} deletado!`}))
+        knex('medicos').where({id_medico:req.params.id}).del()
+        .then(resultado=>res.status(200).json({msg:`Médico de id : ${req.params.id} deletado!`}))
     }
 }
