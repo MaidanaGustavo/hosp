@@ -10,7 +10,7 @@ module.exports = {
 
             ds_especialidade
 
-        }).then(result => res.json({msg:"Inserido com Sucesso!"}))
+        }).then(result => res.json({msg:"Inserido com Sucesso!!"}))
         .catch(err => console.log(err));
 
     }
