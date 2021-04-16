@@ -11,11 +11,11 @@
    <h4> Uma vez na pasta do projeto, é necessário executar os comando abaixo <b>necessariamente nessa ordem</b> </h4>
     - Para instalar todas as bibliotecas execute : npm install --save </br>
     - Depois é necessário rodar as migrations numa ordem correta, com os seguintes comando : </br>
-             </br>   - knex migrate:up 20210326224714_paciente.js
-             </br>   - knex migrate:up 20210326224942_medicos.js 
-             </br>   - knex migrate:latest
+             </br>   - npx knex migrate:up 20210326224714_paciente.js
+             </br>   - npx knex migrate:up 20210326224942_medicos.js 
+             </br>   - npx knex migrate:latest
     </br> - <strong> Opcionalmente pode rodar as seeds para preencher o banco incialmente</strong> : </br>
-        - knex seed:run </br>
+        - npx knex seed:run </br>
         
    -<strong>Por fim  para iniciar o servidor na porta 3030 :</strong> </br>
     <b> - npm start </b>
