@@ -21,9 +21,7 @@ class PatientPhoneController{
     const patientAndNumberExists = await PatientsPhonesRepository.findAllByID(patient_id)
 
 
-    const [checkNumber] = patientAndNumberExists.map(function(item){
-      if(item.phone_number === phone_number) return 1
-    })
+    const checkNumber = patientAndNumberExists.find((number) => number.phone_number === phone_number)
 
     if( patientAndNumberExists &&  checkNumber)
     return res.status(404).json({error : ' Patient phone number already exists!'})
